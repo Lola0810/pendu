@@ -55,7 +55,7 @@ def boucle_pendu():
         if lettre in lettres_trouve:
             lettres_mot.append(lettre)
 
-    return (len(lettres_mot) == len(mot)) or erreurs == 6
+    return (len(lettres_mot) == len(mot)) or erreurs == 8
 
 
 def demarrer():
@@ -68,7 +68,7 @@ def demarrer():
         verifier_lettre(lettre)
         afficher_pendu()
 
-    if erreurs == 6:
+    if erreurs == 8:
         print(f'Désolé vous avez perdu, le mot était {mot}')
     else:
         print('Bravo vous avez gagné')

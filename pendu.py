@@ -21,6 +21,9 @@ def verifier_lettre(lettre):
 
     if len(lettre) > 1:
         print("Désolé,vous devez entrer une seule lettre")
+    if len(lettre) == 0:
+        print("Vous devez entrer une lettre")
+        return
 
     lettre_majuscule = lettre.upper()
     if lettre_majuscule in lettres_trouve:
